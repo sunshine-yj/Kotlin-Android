@@ -1,17 +1,1 @@
 /build
-
-# Gradle / 빌드 결과물
-.gradle/
-build/
-.kotlin/
-
-# 내 PC 전용 설정 (SDK 경로)
-local.properties
-
-# IDE 설정
-.idea/
-*.iml
-
-# OS 자동 생성 파일
-Thumbs.db
-.DS_Store
