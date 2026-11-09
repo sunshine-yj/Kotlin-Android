@@ -4,12 +4,39 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/android/BookMarket" name="BookMarket">
+                <projects>
+                  <project path="$PROJECT_DIR$/android/BookMarket" />
+                  <project path="$PROJECT_DIR$/android/BookMarket/app" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/android/Kotlin-Android" name="Kotlin-Android">
+                <projects>
+                  <project path="$PROJECT_DIR$/android/Kotlin-Android" />
+                  <project path="$PROJECT_DIR$/android/Kotlin-Android/app" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/kotlin/KotlinPractice" name="KotlinPractice">
+                <projects>
+                  <project path="$PROJECT_DIR$/kotlin/KotlinPractice" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/android/BookMarket" />
+            <option value="$PROJECT_DIR$/android/BookMarket/app" />
+            <option value="$PROJECT_DIR$/android/Kotlin-Android" />
+            <option value="$PROJECT_DIR$/android/Kotlin-Android/app" />
+            <option value="$PROJECT_DIR$/kotlin/KotlinPractice" />
           </set>
         </option>
       </GradleProjectSettings>
