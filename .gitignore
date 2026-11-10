@@ -2,6 +2,7 @@
 .gradle/
 build/
 .kotlin/
+**/src/main/res/drawable/*.png
 
 # 내 PC 전용 설정 (SDK 경로)
 local.properties
