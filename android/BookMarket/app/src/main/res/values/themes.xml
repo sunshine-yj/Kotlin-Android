@@ -3,7 +3,23 @@
     <style name="Base.Theme.BookMarket" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:statusBarColor">@color/appBarColor</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
     </style>
 
-    <style name="Theme.BookMarket" parent="Base.Theme.BookMarket"/>
+    <style name="Theme.BookMarket" parent="Base.Theme.BookMarket" />
+
+
+    <style name="MyTheme.BookMarket" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/appBarColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/appBarColor</item>
+
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- Customize your theme here. -->
+    </style>
 </resources>

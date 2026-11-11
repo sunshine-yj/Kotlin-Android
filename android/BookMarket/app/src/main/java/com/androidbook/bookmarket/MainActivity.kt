@@ -1,5 +1,6 @@
 package com.androidbook.bookmarket
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -7,7 +8,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,5 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     fun onBookClick(view: View) {
         Toast.makeText(getApplicationContext(), "도서 쇼핑몰을 시작합니다.", Toast.LENGTH_LONG).show()
+        val intent : Intent = Intent(this, MenuActivity::class.java)
+        startActivity(intent)
     }
 }
