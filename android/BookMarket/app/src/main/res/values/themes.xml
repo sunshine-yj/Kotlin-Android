@@ -22,4 +22,15 @@
 
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="MyTheme.Cart" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/appBarColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/appBarColor</item>
+        <item name="android:navigationBarColor">@color/appBarColor</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
 </resources>

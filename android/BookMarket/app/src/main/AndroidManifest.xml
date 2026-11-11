@@ -26,6 +26,16 @@
         <activity android:theme="@style/MyTheme.BookMarket"
                   android:label="도서상세정보"
                   android:name=".BookActivity"/>
+        <activity android:theme="@style/MyTheme.BookMarket"
+                  android:label="장바구니"
+                  android:name=".cart.CartActivity"/>
+        
+        <activity android:theme="@style/MyTheme.Cart"
+                  android:label="배송정보"
+                  android:name=".order.ShippingActivity"/>
+        <activity android:theme="@style/MyTheme.Cart"
+                  android:label="주문서"
+                  android:name=".order.OrderActivity"/>
 
     </application>
 
