@@ -37,6 +37,13 @@
                   android:label="주문서"
                   android:name=".order.OrderActivity"/>
 
+        <activity android:theme="@style/MyTheme.BookMarket"
+                  android:label="나의 페이지"
+                  android:name=".mypage.MyPageActivity"/>
+        <activity android:theme="@style/MyTheme.BookMarket"
+                  android:label="메모장"
+                  android:name=".mypage.MemoActivity"/>
+
     </application>
 
 </manifest>
