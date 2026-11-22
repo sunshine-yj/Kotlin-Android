@@ -44,6 +44,16 @@
                   android:label="메모장"
                   android:name=".mypage.MemoActivity"/>
 
+        <provider
+            android:authorities="com.androidbook.bookmarket.mypage.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 
 </manifest>

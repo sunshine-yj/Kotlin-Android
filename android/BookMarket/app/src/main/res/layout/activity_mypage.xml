@@ -6,17 +6,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".mypage.MyPageActivity">
 
 
-    <ImageView
-        android:id="@+id/loginimg"
-        android:layout_width="match_parent"
+    <FrameLayout
+        android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_alignParentTop="false"
-        android:layout_centerHorizontal="false"
-        android:src="@drawable/mypage_user" />
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="90dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/loginimg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mypage_user" />
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_photo"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/mypage_modify"
+            android:tint="@color/white"
+            app:backgroundTint="#49B7B6" />
+
+    </FrameLayout>
 
     <LinearLayout
         android:id="@+id/work_layout"
@@ -64,5 +89,15 @@
         android:text="메모장 >"
         android:textSize="18sp" />
 
+    <Button
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:backgroundTint="#FDA95A"
+        android:text="낙서장 >"
+        android:textSize="18sp" />
 
 </LinearLayout>
