@@ -45,6 +45,10 @@
                   android:label="메모장"
                   android:name=".mypage.MemoActivity"/>
 
+        <activity android:theme="@style/MyTheme.BookMarket"
+                  android:label="마켓정보"
+                  android:name=".marketinfo.MarketInfoActivity"/>
+
         <provider
             android:authorities="com.androidbook.bookmarket.mypage.fileprovider"
             android:name="androidx.core.content.FileProvider"
@@ -54,6 +58,9 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+                   android:value="AIzaSyBEAuGGYCBXGUt6j5IRt9ejj9HmnxjJj8U"/>
 
     </application>
 

@@ -27,6 +27,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
+
 class MyPageActivity : AppCompatActivity() {
     lateinit var menoObj : Button
     lateinit var loginimg: ImageView
@@ -88,7 +89,6 @@ class MyPageActivity : AppCompatActivity() {
             }
 
             layoutGalleryPick.setOnClickListener {
-
                 val intent = Intent(Intent.ACTION_PICK)
                 intent.type = "image/*"
                 launcher.launch(intent)
@@ -105,23 +105,17 @@ class MyPageActivity : AppCompatActivity() {
             val pref : SharedPreferences = getSharedPreferences("prefile",  Context.MODE_PRIVATE)
             val editor: SharedPreferences.Editor = pref.edit()
             if (requestCode == REQUEST_TAKE_PHOTO && result.resultCode == RESULT_OK) {
-                //val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, Uri.fromFile(m_imageFile))
                 Glide.with(this).load(Uri.fromFile(m_imageFile)).into(loginimg)
-
 
                 editor.putString("filename", Uri.fromFile(m_imageFile).toString())
                 editor.apply()
-
             }
-            else      if (requestCode == REQUEST_IMAGE_CHOOSE && result.resultCode == RESULT_OK) {
-                //  loginimg.setImageURI(data?.data)
+            else if (requestCode == REQUEST_IMAGE_CHOOSE && result.resultCode == RESULT_OK) {
                 Glide.with(this).load(result.data?.data).into(loginimg)
-
 
                 editor.putString("filename", result.data?.data.toString())
                 editor.apply()
             }
-
 
         }
 
@@ -147,5 +141,6 @@ class MyPageActivity : AppCompatActivity() {
         val imageFile: File = File.createTempFile("JPEG_${timeStamp}_", ".jpg", storageDir)
         return imageFile
     }
+
 
 }

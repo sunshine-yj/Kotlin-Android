@@ -177,7 +177,7 @@ class MemoActivity : AppCompatActivity() {
         val searchView = searchItem?.actionView as SearchView
         searchView.setQueryHint("Search View Hint")
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(p0: String?): Boolean {  // 검색 버튼 누를 때 호출
+            override fun onQueryTextSubmit(p0: String?): Boolean {
 
                 memoList.clear()
                 memoList = db.searchReadData(p0.toString())
